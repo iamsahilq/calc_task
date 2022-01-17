@@ -6,6 +6,7 @@
       output -> 5+2 = 7`
       
 _Added another way to run calculations using npn run calc {{operation}} {{val1}} {{val2}}_
+
 `example: 
       input -> npm run calc add 5 2
       output -> 5+2 = 7`
