@@ -1,6 +1,3 @@
-// SSH Key test
-// GPG key test
-
 import minimist from 'minimist';
 
 import add from './add';
