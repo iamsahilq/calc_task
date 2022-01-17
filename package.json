@@ -7,7 +7,8 @@
     "add": "nodemon --exec babel-node  add.js",
     "diff": "nodemon --exec babel-node diff.js",
     "product": "nodemon --exec babel-node product.js",
-    "divide": "nodemon --exec babel-node divide.js"
+    "divide": "nodemon --exec babel-node divide.js",
+    "calc": "nodemon --exec babel-node index.js"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,7 @@
     "@babel/core": "^7.16.7",
     "@babel/node": "^7.16.8",
     "@babel/preset-env": "^7.16.8",
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.5",
+    "nodemon": "^2.0.15"
   }
 }

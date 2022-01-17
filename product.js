@@ -1,12 +1,17 @@
-const argv = require('minimist')(process.argv.slice(2));
+import minimist from 'minimist';
 
-const nums = argv?._?.filter(Number.isFinite);
+const argv = minimist(process.argv.slice(2));
+// const nums = argv?._?.filter(Number  );
+const nums = argv._;
 
-function divideFunc(arr) {
+export default function divideFunc(arr) {
   if (!arr.length) return console.log('No values to process');
-  const Value = arr.reduce((a, b) => (a * b));
+  const Value = arr.reduce((a, b) => a * b);
   console.log('Value :>> ', Value);
   return Value;
 }
 
-divideFunc(nums);
+if (require.main === module) {
+  console.log('called directly');
+  divideFunc(nums);
+}
