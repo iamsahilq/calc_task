@@ -21,12 +21,13 @@ const calc = (arr) => {
   if (!arr.length) {
     throw new Error('Not enough arguments');
   }
-  const num = arr.filter(!Number.isNaN);
   const expr = arr[0];
+  console.log('expr :>> ', expr);
   if (!avlExpr[expr.toLowerCase()]) {
     throw new Error('Invalid Expr');
   }
-  console.log('expr :>> ', expr);
+  const num = arr.map(Number).filter((e) => !Number.isNaN(e));
+  console.log('num :>> ', num);
   let value = 0;
   switch (expr) {
     case 'add':
