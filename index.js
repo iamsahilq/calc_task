@@ -1,3 +1,5 @@
+// SSH Key test
+
 import minimist from 'minimist';
 
 import add from './add';
