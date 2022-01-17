@@ -1,8 +1,10 @@
 import minimist from 'minimist';
 
 const argv = minimist(process.argv.slice(2));
-// const nums = argv?._?.filter(Number  );
-const nums = argv._;
+console.log('argv :>> ', argv);
+const nums = argv._.filter((e) => !Number.isNaN(e)).map(Number);
+
+// const nums = argv._;
 
 export default function divideFunc(arr) {
   if (!arr.length) return console.log('No values to process');

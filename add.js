@@ -2,7 +2,7 @@ import minimist from 'minimist';
 
 const argv = minimist(process.argv.slice(2));
 
-const nums = argv?._?.filter(Number);
+const nums = argv._.filter((e) => !Number.isNaN(e)).map(Number);
 
 export default function sumFunc(arr) {
   if (!arr.length) return console.log('No values to process');

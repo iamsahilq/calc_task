@@ -19,7 +19,7 @@ const calc = (arr) => {
   if (!arr.length) {
     throw new Error('Not enough arguments');
   }
-  const num = arr.filter(Number);
+  const num = arr.filter(!Number.isNaN);
   const expr = arr[0];
   if (!avlExpr[expr.toLowerCase()]) {
     throw new Error('Invalid Expr');
