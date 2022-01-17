@@ -1,3 +1,5 @@
+// Signed commit
+
 import minimist from 'minimist';
 
 import add from './add';
